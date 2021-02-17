@@ -22,5 +22,5 @@ if str(current_dt) == str(get_hive_dt):
 else:
   ## Send as parameter (After insert into final partition table we need to drop raw table
   spark.sql("drop table test_spark.tbl_airline_data_orc")
-  ## Send as parameter (Again creat empty raw table)
+  ## call unix shell to run hive command (Again creat empty raw table)
   call('hive -f "'+ file_path + scriptt +'"', shell=True)
