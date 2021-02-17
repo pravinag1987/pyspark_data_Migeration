@@ -4,8 +4,6 @@ from pyspark.sql.functions import current_date
 from pyspark.sql.types import *
 from datetime import datetime
 
-## Need to enable this block of code
-
 uschema = StructType([\
     StructField("DataExtractDate",StringType(),True), \
     StructField("ReportPeriod",StringType(),True), \
