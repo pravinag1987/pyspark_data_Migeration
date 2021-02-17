@@ -33,22 +33,3 @@ for file in os.listdir(file_path):
       if (str(get_hive_dt) == 'None') or (str(current_dt) == str(get_hive_dt)):
 
          file_read1.write.format("orc").mode("append").insertInto("test_spark.tbl_airline_data_orc")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##from pyspark import SparkConf, SparkContext
-##sc = SparkContext(master="local",appName="Spark Demo")
-##print(sc.textFile('file:///home/hduser1/PravinFiles/Sparkfiles/data/AirLineData/Test_Input_data/Los_Angeles_International_Airport_-_Passenger_Count_By_Carrier_Type.csv').first())
