@@ -1,0 +1,6 @@
+[project_settings]
+file_pathh = /home/hduser1/PravinFiles/Sparkfiles/data/AirLineData/Test_Input_data/
+raw_table = test_spark.tbl_airline_data_orc
+partition_table = test_spark.tbl_airline_data_orc_par
+raw_tab_query = select * from test_spark.tbl_airline_data_orc
+ddl_script = tbl_airline_data_orc.ddl
