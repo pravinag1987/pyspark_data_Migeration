@@ -4,3 +4,12 @@ raw_table = test_spark.tbl_airline_data_orc
 partition_table = test_spark.tbl_airline_data_orc_par
 raw_tab_query = select * from test_spark.tbl_airline_data_orc
 ddl_script = tbl_airline_data_orc.ddl
+
+[MS_SQL_Server_Connection_details]
+MS_database = bigdata
+MS_table = dbo.tbl_usbank_dir
+MS_user = SA
+MS_password = login@123
+MS_driver = com.microsoft.sqlserver.jdbc.SQLServerDriver
+MS_class = spark.driver.extraClassPath
+MS_jar_path = /home/hduser1/PravinFiles/sqljdbc_6.0/enu/jre7/sqljdbc41.jar
