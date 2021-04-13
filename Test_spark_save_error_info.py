@@ -3,13 +3,8 @@ from pyspark.sql.functions import *
 from pyspark.sql.window import Window
 from pyspark.sql.types import *
 
-
-
-
-
 spark =  SparkSession.builder.master("local").appName("Test_File_loading").enableHiveSupport().getOrCreate()
 schema = StructType([])
-##df = spark.createDataFrame(spark.sparkContext.emptyRDD(), schema)
 
 randomList = ['a', 0, 2]
 
